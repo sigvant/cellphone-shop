@@ -4,11 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router } from 'react-router-dom';
+// so here we will add the context provider because it is the top level of the application
+import {ProductProvider} from './Context'
 
 ReactDOM.render(
-  <Router>
-    <App />
-  </Router>,
+  <ProductProvider>
+    <Router>
+      <App />
+    </Router>
+  </ProductProvider>,
   document.getElementById('root')
 );
 
