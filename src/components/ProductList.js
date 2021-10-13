@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Product from './Product'
 import Title from './Title'
 import {ProductConsumer} from '../Context'
@@ -19,6 +19,7 @@ function ProductList() {
                                         <Product key={product.id} product={product}/>
                                     ))
                                 }
+                                // here we consume the data from the context properly
                             }
                         </ProductConsumer>
                     </div>
